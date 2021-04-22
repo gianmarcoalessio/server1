@@ -1,0 +1,29 @@
+{
+  "name": "server1",
+  "version": "1.0.0",
+  "description": "server versione completa",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giemsei/server1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giemsei/server1/issues"
+  },
+  "homepage": "https://github.com/giemsei/server1#readme",
+  "dependencies": {
+    "better-sqlite3": "^7.1.5",
+    "express": "^4.17.1",
+    "module-alias": "^2.2.2"
+  },
+  "client": {
+    "port": "8000"
+  }
+}
