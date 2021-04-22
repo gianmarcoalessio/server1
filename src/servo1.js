@@ -18,6 +18,12 @@ router
         try {
             var u = checkUser(req, 0)//il secondo paramtro è il livello di autorizzazione: 9 livello amministratore massimo
             var tm = req.body || {}
+            if (u.level==1){
+                res.send(new Risposta(req,{
+                    dati:"dati forniti a livello 1"
+                }))
+            }
+            tm.u=u
             tm.counter = count++
             res.send(new Risposta(req, tm)) //conta quante volte il servizio é stato chimato 
         } catch (e) {
@@ -29,6 +35,7 @@ router
         try {
             var u = checkUser(req, 2)//il secondo paramtro è il livello di autorizzazione: 9 livello amministratore massimo
             var tm = req.body || {}
+            tm.u=u
             tm.counter = count++
             res.send(new Risposta(req, tm)) //conta quante volte il servizio é stato chimato 
         } catch (e) {
@@ -40,6 +47,7 @@ router
         try {
             var u = checkUser(req, 9)//il secondo paramtro è il livello di autorizzazione: 9 livello amministratore massimo
             var tm = req.body || {}
+            tm.u=u
             tm.counter = count++
             res.send(new Risposta(req, tm)) //conta quante volte il servizio é stato chimato 
         } catch (e) {
