@@ -3,10 +3,11 @@ const fs = require("fs")
 const moduleAlias = require("module-alias") //alias delle cartelle, molto utile
 const path = require("path")
 const app = express()
-moduleAlias.addAlias("@public", path.join(__dirname,"./public"))//utile perche se dobbiamo cambiare nomi di cartelle basta cambiare il percorso, ma non funziona con express.static, ma solo con i SERVIZI
-moduleAlias.addAlias("@css","./public/css") //senza il path join percorso relativo altrimenti con percorso assoluto
-moduleAlias.addAlias("@src","./src")
-moduleAlias.addAlias("@data","./data")
+moduleAlias.addAlias("@public", path.join(__dirname,"./public"))
+moduleAlias.addAlias("@css",path.join(__dirname,"./css"))
+moduleAlias.addAlias("@src", path.join(__dirname,"./src"))
+moduleAlias.addAlias("@data",path.join(__dirname,"./data"))
+moduleAlias.addAlias("@base",path.join(__dirname,"./src/funzioniBase"))
 /* Alternativa di moduleAlias.addAlias
 moduleAlias.addAliases({
     "@src":"./src",
@@ -28,6 +29,8 @@ app.get('/test.html', function (req, res) {
     res.send('Hello World')
 })
 
+//per utilizzare i MIEI SERVI dentro src
+app.use("/servo1",require("@src/servo1.js"))
 
 
 app.listen(client.port || 3000,()=>{
