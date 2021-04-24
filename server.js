@@ -31,6 +31,7 @@ app.get('/test.html', function (req, res) {
 
 //per utilizzare i MIEI SERVI dentro src
 app.use("/servo1",require("@src/servo1.js"))
+app.use("/comuni",require("@src/comuni.js"))
 
 
 app.listen(client.port || 3000,()=>{

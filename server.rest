@@ -6,3 +6,35 @@ content-type: application/json
     "dati":"prova 1",
     "_UID": "4d458c9a9c3d4f6534380c9e73988f4b" 
 }
+
+###
+
+POST http://localhost:8000/comuni/treviso
+content-type: application/json
+
+{
+    "_UID": "Giammi" 
+}
+
+###
+
+POST http://localhost:8000/comuni/provincia
+content-type: application/json
+
+{
+    "prv": "027",
+    "_UID": "Giammi" 
+}
+
+###
+
+POST http://localhost:8000/comuni/comune
+content-type: application/json
+
+{
+    "sigla": "027.001",
+    "_UID": "Giammi" 
+}
+
+
+
