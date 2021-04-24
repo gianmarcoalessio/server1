@@ -36,5 +36,14 @@ content-type: application/json
     "_UID": "Giammi" 
 }
 
+###
+
+POST http://localhost:8000/comuni/rapportomaschifemmine
+content-type: application/json
+
+{
+    "_UID": "Giammi" 
+}
+
 
 

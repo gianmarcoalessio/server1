@@ -88,3 +88,22 @@ router
             res.send(new Risposta(req, null, e.message))
         }
     })
+    //rapporto di valore abitanti femmine emaschi
+    .post('/rapportomaschifemmine', (req, res) => {
+        try {
+            var u = checkUser(req, 0)
+            var db = dbComuni()
+    
+            db.function("rapporto",(a,b)=> {
+                return a/b;
+            })
+
+            var sql = `select name,provincia,abmaschi,abfemmine, rapporto(abfemmine,abmaschi) as rap1 from comuni order by rap1 desc limit 20`
+            var dati = db.prepare(sql).all()//prepara e compila la query e all ritorna tutti i dati alla variabile dati  
+
+            db.chiudi() //per chiudere il database una volta aperto 
+            res.send(new Risposta(req, dati))
+        } catch (e) {
+            res.send(new Risposta(req, null, e.message))
+        }
+    })
