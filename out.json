@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Giammi",
+    "pass": "mammi",
+    "level": 0,
+    "email": "gg@aaaa.aaa"
+  },
+  {
+    "nome": "Jacopo",
+    "pass": "aaadsdm",
+    "level": 1,
+    "email": "gg@aaaa.aaa"
+  },
+  {
+    "nome": "Turing",
+    "pass": "aaam",
+    "level": 1,
+    "email": "gg@aaaa.aaa"
+  }
+]
