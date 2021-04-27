@@ -3,16 +3,16 @@ var { database } = require("liburno_lib")
 var db1 = database.db("data/comuni.db")
 
 var corsi = [
-    { sigla: "ITA", nome: "italiano" },
-    { sigla: "MAT", nome: "matematica" },
-    { sigla: "YOG", nome: "yoga" },
-    { sigla: "DES", nome: "jacopo" }
+    { sigla: "ITA", nome: "italiano", datacrea: 20201013, prove: [20211013, 20221013, 20231013], costo: 2000 },
+    { sigla: "MAT", nome: "matematica", datacrea: 20201009, prove: [20211009, 20231009], costo: 3689 },
+    { sigla: "YOG", nome: "yoga", datacrea: 20201001, prove: [20211001, 20221001], costo: 10000 },
+    { sigla: "DES", nome: "jacopo", datacrea: 20200927, prove: [20230927], costo: 35999 }
 ]
 function randomint(n) {
     return Math.floor(Math.random() * n) //valore casuale da 0 a n-1
 }
 function randomvec(v) {
-    var i= randomint(v.length)
+    var i = randomint(v.length)
     return v[i] //valore casuale da 0 a n-1
 }
 var sql = 'select rowid, nome, dtnascita, titolo, dtelezione from amm order by random() limit 100' //se ci sono proprietà in più non è importante, perchè poi gli selezioneremo
@@ -28,7 +28,7 @@ for (var s of studenti) {
         var t = corsi[randomint(corsi.length)].sigla
         fatti.add(t)
     }
-    s.corsi=[...fatti]
+    s.corsi = [...fatti]
     /* Nello stesso modo di set si può fare con più righe di codice il seguente algoritmo 
     var fatti= {}
     for (var i=0;i<=randomint(3);i++){
@@ -42,49 +42,51 @@ for (var s of studenti) {
     */
 }
 
-var sql = 'select rowid, nome, dtnascita, titolo, dtelezione from amm order by random() limit 10' 
+var sql = 'select rowid, nome, dtnascita, titolo, dtelezione from amm order by random() limit 10'
 var docenti = db1.prepare(sql).all()
 for (var d of docenti) {
     var n = d.nome.split(' ')
     d.nome = n[0]
     d.cognome = n[1]
-    d.sigla = "d"+d.rowid
+    d.sigla = "d" + d.rowid
 
-    var fatti = new Set 
+    var fatti = new Set
     for (var i = 0; i <= randomint(2); i++) {
         var t = corsi[randomint(corsi.length)].sigla
         fatti.add(t)
     }
-    d.corsi=[...fatti]
+    d.corsi = [...fatti]
 }
 
-for (var c of corsi){
-    var docente=randomvec(docenti) //al posto di scrivere docenti[randomint(docenti.length)]
-    c.docente=docente.sigla
+for (var c of corsi) {
+    var docente = randomvec(docenti) //al posto di scrivere docenti[randomint(docenti.length)]
+    c.docente = docente.sigla
 
-    var nstudenti = 15 +randomint(21)
-    if (nstudenti>25){
-        var assistente=randomvec(docenti)
-        if (assistente.sigla!=c.docente){
-            c.assistente=assistente.sigla
+    var nstudenti = 15 + randomint(21)
+    if (nstudenti > 25) {
+        var assistente = randomvec(docenti)
+        if (assistente.sigla != c.docente) {
+            c.assistente = assistente.sigla
         }
     }
 
     //generiamo gli studenti che partecipano al corso 
-    var fatti = new Set 
+    var fatti = new Set
     for (var i = 0; i <= nstudenti; i++) {
         var t = randomvec(studenti).sigla
         fatti.add(t)
     }
-    c.studenti=[...fatti]
+    c.studenti = [...fatti]
 }
 
+//Se non cacello il file non lo rigenera (per mantenere i dati casuali generati apparte quelli costruiti alla fine dentro i 3 cicli for)
+if (fs.existsSync("out.json")){
+    var {studenti,docenti,corsi} = JSON.parse(fs.readFileSync("out.json"))
+}else {
+    fs.writeFileSync("out.json", JSON.stringify({ studenti, docenti, corsi }, null, 2))
 
+}
 
-
-
-
-fs.writeFileSync("out.json", JSON.stringify({studenti,docenti,corsi}, null, 2))
 
 db1.chiudi()
 
@@ -95,12 +97,12 @@ crashare e perdersi a caso.
 */
 
 
-var file= "data/scuola.db"
-var esiste=fs.existsSync(file) //questo mi dice se il database c'è oppure no, perchè quando faccio l'appartura del database con il commando sotto lo crea se non esiste
+var file = "data/scuola.db"
+var esiste = fs.existsSync(file) //questo mi dice se il database c'è oppure no, perchè quando faccio l'appartura del database con il commando sotto lo crea se non esiste
 
 var db = database.db(file)
 //con questo file crea un file che non è più vuoto ma anzi ha la struttura che abbiamo costruito nella teoria prima di affrontare la creazione del database
-if(!esiste){
+if (!esiste) {
     db.prepare(`
     -- creazione
 CREATE TABLE if not exists corsi (
@@ -156,18 +158,38 @@ db.begin()//rende atomico (cioè come se fosse un unico commando) tutto quello c
 
 //con il commando "i corsi" su tlite ottengo il commando per inserire i dati json dentro la tabella corsi:
 
-var ds= db.prepare("insert or replace into corsi (sigla, nome, docente, assistente, datacrea, costo) values (?,?,?,?,?,?)")
-for (var c of corsi){
-    ds.run(c.sigla,c.nome,c.docente,c.assistente,0,0)
-} 
-var ds=db.prepare("insert or replace into studenti (sigla, nome, cognome, sesso, dnascita) values (?,?,?,?,?) ")
-for (var s of studenti){
-    ds.run(s.sigla,s.nome,s.cognome,"x",s.dtnascita)
-} 
+var ds = db.prepare("insert or replace into corsi (sigla, nome, docente, assistente, datacrea, costo) values (?,?,?,?,?,?)")
+for (var c of corsi) {
+    ds.run(c.sigla, c.nome, c.docente, c.assistente, c.datacrea, c.costo)
+}
+var ds = db.prepare("insert or replace into studenti (sigla, nome, cognome, sesso, dnascita) values (?,?,?,?,?) ")
+for (var s of studenti) {
+    ds.run(s.sigla, s.nome, s.cognome, "x", s.dtnascita)
+}
 //un altro modo molto meno efficiente è quello scritto sotto
-var sql="insert or replace into docenti (sigla, nome, cognome, sesso, titolo, stipendio, dnascita, dassunzione) values (?,?,?,?,?,?,?,?)"
-for (var d of docenti){
-    db.prepare(sql).run(d.sigla,d.nome,d.cognome,"x",d.titolo,0,d.dtnascita,d.dtelezione)
+var sql = "insert or replace into docenti (sigla, nome, cognome, sesso, titolo, stipendio, dnascita, dassunzione) values (?,?,?,?,?,?,?,?)"
+for (var d of docenti) {
+    db.prepare(sql).run(d.sigla, d.nome, d.cognome, "x", d.titolo, 0, d.dtnascita, d.dtelezione)
+}
+//riprendiamo lo stesso efficace di prima
+db.prepare("delete from corsoiscritti").run() //commando per cancellare tutti i record di una tabella
+var ds = db.prepare("insert or replace into corsoiscritti (corso, studente) values (?,?)") //mancando la chiave primaria non sa come usare replace e quindi si è aggiunto un DELETE nella riga sopra
+for (var c of corsi) {
+    for (var s of c.studenti) {
+        ds.run(c.sigla, s)
+    }
+}
+db.prepare("delete from corsoprove").run() //commando per cancellare tutti i record di una tabella
+var ds = db.prepare("insert or replace into corsoprove (corso, data, studente, voto, giudizio) values (?,?,?,?,?)")
+for (var c of corsi) {
+    for (var p of c.prove) {
+        for (var s of c.studenti) {
+            if (Math.random() > 0.05) {
+                var voto = 5+randomint(6)
+                ds.run(c.sigla,p,s,voto,voto>5?"POSITIVO":"NEGATIVO")
+            }
+        }
+    }
 }
 
 db.commit()
