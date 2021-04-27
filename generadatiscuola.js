@@ -1,7 +1,6 @@
 const fs = require("fs")
 var { database } = require("liburno_lib")
 var db1 = database.db("data/comuni.db")
-var db = database.db("data/scuola.db")
 
 var corsi = [
     { sigla: "ITA", nome: "italiano" },
@@ -77,7 +76,6 @@ for (var c of corsi){
         var t = randomvec(studenti).sigla
         fatti.add(t)
     }
-    console.log(fatti)
     c.studenti=[...fatti]
 }
 
@@ -88,5 +86,89 @@ for (var c of corsi){
 
 fs.writeFileSync("out.json", JSON.stringify({studenti,docenti,corsi}, null, 2))
 
-db.chiudi()
 db1.chiudi()
+
+
+/*---------------------
+È BUONA NORMA per la sicurezza della struttura del database salvarsi il risultato del commando schema nel codice perchè può 
+crashare e perdersi a caso.
+*/
+
+
+var file= "data/scuola.db"
+var esiste=fs.existsSync(file) //questo mi dice se il database c'è oppure no, perchè quando faccio l'appartura del database con il commando sotto lo crea se non esiste
+
+var db = database.db(file)
+//con questo file crea un file che non è più vuoto ma anzi ha la struttura che abbiamo costruito nella teoria prima di affrontare la creazione del database
+if(!esiste){
+    db.prepare(`
+    -- creazione
+CREATE TABLE if not exists corsi (
+   sigla NVARCHAR COLLATE NOCASE DEFAULT '',
+   nome NVARCHAR COLLATE NOCASE DEFAULT '',
+   docente NVARCHAR COLLATE NOCASE DEFAULT '',
+   assistente NVARCHAR COLLATE NOCASE DEFAULT '',
+   datacrea INTEGER DEFAULT 0,
+   costo REAL DEFAULT 0,
+   PRIMARY KEY (SIGLA)
+);
+CREATE TABLE if not exists corsoiscritti (
+   corso NVARCHAR COLLATE NOCASE DEFAULT '',
+   studente NVARCHAR COLLATE NOCASE DEFAULT ''
+);
+CREATE TABLE if not exists corsoprove (
+   corso NVARCHAR COLLATE NOCASE DEFAULT '',
+   data INTEGER DEFAULT 0,
+   studente NVARCHAR COLLATE NOCASE DEFAULT '',
+   voto INTEGER DEFAULT 0,
+   giudizio NVARCHAR COLLATE NOCASE DEFAULT ''
+);
+CREATE TABLE if not exists docenti (
+   sigla NVARCHAR COLLATE NOCASE DEFAULT '',
+   nome NVARCHAR COLLATE NOCASE DEFAULT '',
+   cognome NVARCHAR COLLATE NOCASE DEFAULT '',
+   sesso NVARCHAR COLLATE NOCASE DEFAULT '',
+   titolo NVARCHAR COLLATE NOCASE DEFAULT '',
+   stipendio REAL DEFAULT 0,
+   dnascita INTEGER DEFAULT 0,
+   dassunzione INTEGER DEFAULT 0,
+   PRIMARY KEY (SIGLA)
+);
+CREATE TABLE if not exists orari (
+   corso NVARCHAR COLLATE NOCASE DEFAULT '',
+   aula NVARCHAR COLLATE NOCASE DEFAULT '',
+   giorno INTEGER DEFAULT 0,
+   orai INTEGER DEFAULT 0,
+   oraf INTEGER DEFAULT 0
+);
+CREATE TABLE if not exists studenti (
+   sigla NVARCHAR COLLATE NOCASE DEFAULT '',
+   nome NVARCHAR COLLATE NOCASE DEFAULT '',
+   cognome NVARCHAR COLLATE NOCASE DEFAULT '',
+   sesso NVARCHAR COLLATE NOCASE DEFAULT '',
+   dnascita NVARCHAR COLLATE NOCASE DEFAULT '',
+   PRIMARY KEY (SIGLA)
+); 
+`).run()
+}
+
+db.begin()//rende atomico (cioè come se fosse un unico commando) tutto quello che sta dentro db.begin() e db.commit(), è utile farlo nel caso avessimo più di una tabella da insert(in questi caso ne abbiamo tre: corsi,studenti e docenti)
+
+//con il commando "i corsi" su tlite ottengo il commando per inserire i dati json dentro la tabella corsi:
+
+var ds= db.prepare("insert or replace into corsi (sigla, nome, docente, assistente, datacrea, costo) values (?,?,?,?,?,?)")
+for (var c of corsi){
+    ds.run(c.sigla,c.nome,c.docente,c.assistente,0,0)
+} 
+var ds=db.prepare("insert or replace into studenti (sigla, nome, cognome, sesso, dnascita) values (?,?,?,?,?) ")
+for (var s of studenti){
+    ds.run(s.sigla,s.nome,s.cognome,"x",s.dtnascita)
+} 
+//un altro modo molto meno efficiente è quello scritto sotto
+var sql="insert or replace into docenti (sigla, nome, cognome, sesso, titolo, stipendio, dnascita, dassunzione) values (?,?,?,?,?,?,?,?)"
+for (var d of docenti){
+    db.prepare(sql).run(d.sigla,d.nome,d.cognome,"x",d.titolo,0,d.dtnascita,d.dtelezione)
+}
+
+db.commit()
+db.chiudi()
