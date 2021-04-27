@@ -10,8 +10,12 @@ module.exports = router;
 //otteniamo prima di tutto il database 
 var dbComuni = () => {
     var file = path.join(__dirname, "../data/comuni.db")
-    console.log(file)
     var db = database.db(file)
+    // estensione alla funzione
+    db.function("rapporto",(a,b)=> {
+        return (a && b)?  a/b:0;
+    })
+
     return db
 }
 
@@ -94,10 +98,7 @@ router
             var u = checkUser(req, 0)
             var db = dbComuni()
     
-            db.function("rapporto",(a,b)=> {
-                return a/b;
-            })
-
+          
             var sql = `select name,provincia,abmaschi,abfemmine, rapporto(abfemmine,abmaschi) as rap1 from comuni order by rap1 desc limit 20`
             var dati = db.prepare(sql).all()//prepara e compila la query e all ritorna tutti i dati alla variabile dati  
 

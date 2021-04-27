@@ -1,6 +1,6 @@
 {
   "data": [
-    "data/comuni.db",
-    "data/utenti.db"
+    "data/utenti.db",
+    "data/comuni.db"
   ]
 }

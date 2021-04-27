@@ -45,5 +45,68 @@ content-type: application/json
     "_UID": "Giammi" 
 }
 
+###
+
+POST http://localhost:8000/utenti
+content-type: application/json
+
+{
+    "_UID": "Giammi" 
+}
+
+
+###
+
+POST http://localhost:8000/utenti/list
+content-type: application/json
+
+{
+    "_UID": "Giammi" 
+}
+
+
+
+###
+
+POST http://localhost:8000/utenti/add
+content-type: application/json
+
+{
+    "_UID": "Giammi",
+    "nome":"Jacopo",
+    "pass":"aaadsdm",
+    "level":3,
+    "email":"gg@aaaa.aaa"
+}
+
+
+###
+
+POST http://localhost:8000/utenti/delete
+content-type: application/json
+
+{
+    "_UID": "Giammi",
+    "nome":"Lanie"
+}
+
+
+###
+
+POST http://localhost:8000/utenti/setlevel
+content-type: application/json
+
+{
+    "_UID": "Tuchick",
+    "nome":"jacopo",
+    "livello":1
+}
+
+
+
+
+
+
+
 
 
