@@ -1,6 +1,7 @@
 {
   "data": [
     "scuola.db",
+    "comuni.db",
     "lezioni.db"
   ]
 }

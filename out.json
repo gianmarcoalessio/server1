@@ -1,20 +1,1525 @@
-[
-  {
-    "nome": "Giammi",
-    "pass": "mammi",
-    "level": 0,
-    "email": "gg@aaaa.aaa"
-  },
-  {
-    "nome": "Jacopo",
-    "pass": "aaadsdm",
-    "level": 1,
-    "email": "gg@aaaa.aaa"
-  },
-  {
-    "nome": "Turing",
-    "pass": "aaam",
-    "level": 1,
-    "email": "gg@aaaa.aaa"
-  }
-]
+{
+  "studenti": [
+    {
+      "rowid": 80339,
+      "nome": "Ilenia",
+      "dtnascita": 19750527,
+      "titolo": null,
+      "dtelezione": 20160605,
+      "cognome": "Rosso",
+      "sigla": "s80339",
+      "corsi": [
+        "YOG",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 48495,
+      "nome": "Roberto",
+      "dtnascita": 19711221,
+      "titolo": "Licenza Media Inferiore",
+      "dtelezione": 20150531,
+      "cognome": "Basili",
+      "sigla": "s48495",
+      "corsi": [
+        "ITA",
+        "YOG",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 12197,
+      "nome": "Antonio",
+      "dtnascita": 19640526,
+      "titolo": "Licenza di Scuola Media Superiore o Titoli Equipollenti",
+      "dtelezione": 20160605,
+      "cognome": "Zaffiri",
+      "sigla": "s12197",
+      "corsi": [
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 92443,
+      "nome": "Federico",
+      "dtnascita": 19830611,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Scarioni",
+      "sigla": "s92443",
+      "corsi": [
+        "DES",
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 39024,
+      "nome": "Fabio",
+      "dtnascita": 19711229,
+      "titolo": "Laurea",
+      "dtelezione": 20160605,
+      "cognome": "Iuliano",
+      "sigla": "s39024",
+      "corsi": [
+        "DES",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 30627,
+      "nome": "Angelo",
+      "dtnascita": 19831007,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Prioli",
+      "sigla": "s30627",
+      "corsi": [
+        "DES"
+      ]
+    },
+    {
+      "rowid": 103183,
+      "nome": "Francesca",
+      "dtnascita": 19811023,
+      "titolo": "Laurea",
+      "dtelezione": 20160605,
+      "cognome": "Perugini",
+      "sigla": "s103183",
+      "corsi": [
+        "DES"
+      ]
+    },
+    {
+      "rowid": 33697,
+      "nome": "Sossio",
+      "dtnascita": 19831118,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Vitale",
+      "sigla": "s33697",
+      "corsi": [
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 83123,
+      "nome": "Santo",
+      "dtnascita": 19561212,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20150531,
+      "cognome": "Indovino",
+      "sigla": "s83123",
+      "corsi": [
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 101320,
+      "nome": "Francesco",
+      "dtnascita": 19770704,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20170611,
+      "cognome": "Laganà",
+      "sigla": "s101320",
+      "corsi": [
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 3844,
+      "nome": "Carla",
+      "dtnascita": 19600104,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20190526,
+      "cognome": "Budassi",
+      "sigla": "s3844",
+      "corsi": [
+        "MAT",
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 26292,
+      "nome": "Marco",
+      "dtnascita": 19661025,
+      "titolo": "Licenza Media Inferiore",
+      "dtelezione": 20190526,
+      "cognome": "Costantini",
+      "sigla": "s26292",
+      "corsi": [
+        "DES",
+        "MAT",
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 95966,
+      "nome": "Camilla",
+      "dtnascita": 19991203,
+      "titolo": null,
+      "dtelezione": 20190526,
+      "cognome": "Fecchi",
+      "sigla": "s95966",
+      "corsi": [
+        "DES",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 87860,
+      "nome": "Maria",
+      "dtnascita": 19590214,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20180610,
+      "cognome": "Luisa",
+      "sigla": "s87860",
+      "corsi": [
+        "DES",
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 40474,
+      "nome": "Pietro",
+      "dtnascita": 19560629,
+      "titolo": "Licenza di Scuola Media Superiore o Titoli Equipollenti",
+      "dtelezione": 20190526,
+      "cognome": "Giuseppe",
+      "sigla": "s40474",
+      "corsi": [
+        "DES"
+      ]
+    },
+    {
+      "rowid": 40979,
+      "nome": "Samantha",
+      "dtnascita": 19850715,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20190526,
+      "cognome": "Simone",
+      "sigla": "s40979",
+      "corsi": [
+        "DES",
+        "ITA",
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 31092,
+      "nome": "Christine",
+      "dtnascita": 19590724,
+      "titolo": "Licenza di Scuola Media Superiore o Titoli Equipollenti",
+      "dtelezione": 20150510,
+      "cognome": "Psaier",
+      "sigla": "s31092",
+      "corsi": [
+        "YOG",
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 95804,
+      "nome": "Giovanni",
+      "dtnascita": 19720418,
+      "titolo": "Laurea",
+      "dtelezione": 20180610,
+      "cognome": "Mastrogiovanni",
+      "sigla": "s95804",
+      "corsi": [
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 66558,
+      "nome": "Silvia",
+      "dtnascita": 19790311,
+      "titolo": null,
+      "dtelezione": 20180610,
+      "cognome": "Modena",
+      "sigla": "s66558",
+      "corsi": [
+        "DES",
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 16035,
+      "nome": "Valentina",
+      "dtnascita": 19771224,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20160605,
+      "cognome": "Fraschetta",
+      "sigla": "s16035",
+      "corsi": [
+        "YOG",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 37198,
+      "nome": "Lucia",
+      "dtnascita": 19820522,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Rita",
+      "sigla": "s37198",
+      "corsi": [
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 73870,
+      "nome": "Giovanni",
+      "dtnascita": 19610302,
+      "titolo": null,
+      "dtelezione": 20180610,
+      "cognome": "Canfora",
+      "sigla": "s73870",
+      "corsi": [
+        "ITA",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 761,
+      "nome": "Stefano",
+      "dtnascita": 19610726,
+      "titolo": "Licenza di Scuola Media Superiore o Titoli Equipollenti",
+      "dtelezione": 20170611,
+      "cognome": "Foglino",
+      "sigla": "s761",
+      "corsi": [
+        "ITA",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 77108,
+      "nome": "Elena",
+      "dtnascita": 19690217,
+      "titolo": "Laurea",
+      "dtelezione": 20160605,
+      "cognome": "Ida",
+      "sigla": "s77108",
+      "corsi": [
+        "YOG",
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 55308,
+      "nome": "Anna",
+      "dtnascita": 19651014,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20190526,
+      "cognome": "Maria",
+      "sigla": "s55308",
+      "corsi": [
+        "MAT",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 33598,
+      "nome": "Orietta",
+      "dtnascita": 19710719,
+      "titolo": null,
+      "dtelezione": 20190526,
+      "cognome": "Piga",
+      "sigla": "s33598",
+      "corsi": [
+        "YOG",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 67121,
+      "nome": "Luca",
+      "dtnascita": 19840112,
+      "titolo": "Licenza di Scuola Media Superiore o Titoli Equipollenti",
+      "dtelezione": 20180610,
+      "cognome": "Zambon",
+      "sigla": "s67121",
+      "corsi": [
+        "ITA",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 18612,
+      "nome": "Michele",
+      "dtnascita": 19651117,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20190526,
+      "cognome": "Schiavo",
+      "sigla": "s18612",
+      "corsi": [
+        "ITA",
+        "MAT",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 44262,
+      "nome": "Luciano",
+      "dtnascita": 19500927,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20170611,
+      "cognome": "Sangiolo",
+      "sigla": "s44262",
+      "corsi": [
+        "MAT",
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 71399,
+      "nome": "Alessandra",
+      "dtnascita": 19690226,
+      "titolo": "Laurea",
+      "dtelezione": 20150510,
+      "cognome": "Capriani",
+      "sigla": "s71399",
+      "corsi": [
+        "DES",
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 66769,
+      "nome": "Diego",
+      "dtnascita": 19710523,
+      "titolo": "Licenza Media Inferiore",
+      "dtelezione": 20190526,
+      "cognome": "Milan",
+      "sigla": "s66769",
+      "corsi": [
+        "ITA",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 34536,
+      "nome": "Cristiana",
+      "dtnascita": 19681222,
+      "titolo": "Laurea",
+      "dtelezione": 20170611,
+      "cognome": "Carlotti",
+      "sigla": "s34536",
+      "corsi": [
+        "DES",
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 99943,
+      "nome": "Simona",
+      "dtnascita": 19830516,
+      "titolo": "Laurea",
+      "dtelezione": 20170611,
+      "cognome": "Scalia",
+      "sigla": "s99943",
+      "corsi": [
+        "MAT",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 88533,
+      "nome": "Vaniel",
+      "dtnascita": 19761201,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20190526,
+      "cognome": "Nervo",
+      "sigla": "s88533",
+      "corsi": [
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 8412,
+      "nome": "Livio",
+      "dtnascita": 19520714,
+      "titolo": "Licenza di Scuola Media Superiore o Titoli Equipollenti",
+      "dtelezione": 20190526,
+      "cognome": "Barisone",
+      "sigla": "s8412",
+      "corsi": [
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 9218,
+      "nome": "Renata",
+      "dtnascita": 19471230,
+      "titolo": null,
+      "dtelezione": 20190526,
+      "cognome": "Boffa",
+      "sigla": "s9218",
+      "corsi": [
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 80599,
+      "nome": "Vincenzo",
+      "dtnascita": 19850709,
+      "titolo": null,
+      "dtelezione": 20190526,
+      "cognome": "Falco",
+      "sigla": "s80599",
+      "corsi": [
+        "YOG",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 55214,
+      "nome": "Davide",
+      "dtnascita": 19870102,
+      "titolo": "Specializzazione Post Laurea / Dottorato di Ricerca",
+      "dtelezione": 20190526,
+      "cognome": "Luca",
+      "sigla": "s55214",
+      "corsi": [
+        "DES",
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 51207,
+      "nome": "Elena",
+      "dtnascita": 19490514,
+      "titolo": "Laurea",
+      "dtelezione": 20160605,
+      "cognome": "Coccia",
+      "sigla": "s51207",
+      "corsi": [
+        "MAT",
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 69570,
+      "nome": "Francesco",
+      "dtnascita": 19871009,
+      "titolo": null,
+      "dtelezione": 20170611,
+      "cognome": "Vitale",
+      "sigla": "s69570",
+      "corsi": [
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 79184,
+      "nome": "Matteo",
+      "dtnascita": 19890306,
+      "titolo": "Laurea",
+      "dtelezione": 20160605,
+      "cognome": "Panari",
+      "sigla": "s79184",
+      "corsi": [
+        "MAT",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 91770,
+      "nome": "Roberto",
+      "dtnascita": 19691007,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Cavallucci",
+      "sigla": "s91770",
+      "corsi": [
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 92597,
+      "nome": "Paolo",
+      "dtnascita": 19791117,
+      "titolo": "Licenza di Scuola Media Inferiore o Titoli Equipollenti",
+      "dtelezione": 20170611,
+      "cognome": "Dell'Acqua",
+      "sigla": "s92597",
+      "corsi": [
+        "DES"
+      ]
+    },
+    {
+      "rowid": 93843,
+      "nome": "Giulio",
+      "dtnascita": 19530402,
+      "titolo": "Laurea",
+      "dtelezione": 20150531,
+      "cognome": "Valentino",
+      "sigla": "s93843",
+      "corsi": [
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 32841,
+      "nome": "Lorenzo",
+      "dtnascita": 19820615,
+      "titolo": "Laurea",
+      "dtelezione": 20170611,
+      "cognome": "Croci",
+      "sigla": "s32841",
+      "corsi": [
+        "DES"
+      ]
+    },
+    {
+      "rowid": 74508,
+      "nome": "Wolfgang",
+      "dtnascita": 19640417,
+      "titolo": "Laurea",
+      "dtelezione": 20150510,
+      "cognome": "Werner",
+      "sigla": "s74508",
+      "corsi": [
+        "MAT",
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 9000,
+      "nome": "Betty",
+      "dtnascita": 19830126,
+      "titolo": "Laurea",
+      "dtelezione": 20180610,
+      "cognome": "Cominotti",
+      "sigla": "s9000",
+      "corsi": [
+        "DES"
+      ]
+    },
+    {
+      "rowid": 75004,
+      "nome": "Silvia",
+      "dtnascita": 19850506,
+      "titolo": "Laurea",
+      "dtelezione": 20150531,
+      "cognome": "Lapenna",
+      "sigla": "s75004",
+      "corsi": [
+        "YOG",
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 72754,
+      "nome": "Caterina",
+      "dtnascita": 19731124,
+      "titolo": "Licenza di Scuola Media Superiore o Titoli Equipollenti",
+      "dtelezione": 20190526,
+      "cognome": "Dugaro",
+      "sigla": "s72754",
+      "corsi": [
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 59245,
+      "nome": "Cristina",
+      "dtnascita": 19560516,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Riva",
+      "sigla": "s59245",
+      "corsi": [
+        "YOG",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 19093,
+      "nome": "Claudio",
+      "dtnascita": 19490228,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20150531,
+      "cognome": "Testa",
+      "sigla": "s19093",
+      "corsi": [
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 47280,
+      "nome": "Renato",
+      "dtnascita": 19700930,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Stabile",
+      "sigla": "s47280",
+      "corsi": [
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 6462,
+      "nome": "Sandra",
+      "dtnascita": 19550115,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20190526,
+      "cognome": "Saura",
+      "sigla": "s6462",
+      "corsi": [
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 53671,
+      "nome": "Riccardo",
+      "dtnascita": 19980910,
+      "titolo": null,
+      "dtelezione": 20190526,
+      "cognome": "Bertacin",
+      "sigla": "s53671",
+      "corsi": [
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 42586,
+      "nome": "Matteo",
+      "dtnascita": 19930202,
+      "titolo": null,
+      "dtelezione": 20150531,
+      "cognome": "Concu",
+      "sigla": "s42586",
+      "corsi": [
+        "MAT",
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 20023,
+      "nome": "Giovanni",
+      "dtnascita": 19510218,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20190526,
+      "cognome": "Biondi",
+      "sigla": "s20023",
+      "corsi": [
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 64259,
+      "nome": "Stefano",
+      "dtnascita": 19920530,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20160605,
+      "cognome": "Paciello",
+      "sigla": "s64259",
+      "corsi": [
+        "MAT",
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 935,
+      "nome": "Gianluca",
+      "dtnascita": 19940615,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Oberti",
+      "sigla": "s935",
+      "corsi": [
+        "YOG",
+        "MAT",
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 52577,
+      "nome": "Riccardo",
+      "dtnascita": 19790208,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Andreoli",
+      "sigla": "s52577",
+      "corsi": [
+        "DES",
+        "ITA",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 106236,
+      "nome": "Giovanni",
+      "dtnascita": 19530123,
+      "titolo": "Laurea",
+      "dtelezione": 20150531,
+      "cognome": "Giannini",
+      "sigla": "s106236",
+      "corsi": [
+        "DES",
+        "YOG",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 26454,
+      "nome": "Maria",
+      "dtnascita": 19591205,
+      "titolo": "Licenza Media Inferiore",
+      "dtelezione": 20150510,
+      "cognome": "Gamper",
+      "sigla": "s26454",
+      "corsi": [
+        "DES",
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 85012,
+      "nome": "Diego",
+      "dtnascita": 19750920,
+      "titolo": "Licenza di Scuola Media Superiore o Titoli Equipollenti",
+      "dtelezione": 20150531,
+      "cognome": "Franz",
+      "sigla": "s85012",
+      "corsi": [
+        "ITA",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 94591,
+      "nome": "Nicola",
+      "dtnascita": 19911120,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Attilio",
+      "sigla": "s94591",
+      "corsi": [
+        "DES"
+      ]
+    },
+    {
+      "rowid": 99665,
+      "nome": "Ugo",
+      "dtnascita": 19570512,
+      "titolo": "Licenza Media Inferiore",
+      "dtelezione": 20170611,
+      "cognome": "Biagi",
+      "sigla": "s99665",
+      "corsi": [
+        "YOG",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 77432,
+      "nome": "Sandra",
+      "dtnascita": 19640120,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Tarmanini",
+      "sigla": "s77432",
+      "corsi": [
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 73696,
+      "nome": "Andrea",
+      "dtnascita": 19700627,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Tenani",
+      "sigla": "s73696",
+      "corsi": [
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 102675,
+      "nome": "Roberto",
+      "dtnascita": 19831010,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Costa",
+      "sigla": "s102675",
+      "corsi": [
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 35545,
+      "nome": "Cristian",
+      "dtnascita": 19820526,
+      "titolo": "Licenza Media Inferiore",
+      "dtelezione": 20160605,
+      "cognome": "Corona",
+      "sigla": "s35545",
+      "corsi": [
+        "ITA",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 52952,
+      "nome": "Marisa",
+      "dtnascita": 19570128,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Maffeis",
+      "sigla": "s52952",
+      "corsi": [
+        "ITA",
+        "DES",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 47497,
+      "nome": "Dino",
+      "dtnascita": 19700703,
+      "titolo": "Laurea",
+      "dtelezione": 20160605,
+      "cognome": "Giacomelli",
+      "sigla": "s47497",
+      "corsi": [
+        "MAT",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 105190,
+      "nome": "Giuseppe",
+      "dtnascita": 19540515,
+      "titolo": "Licenza di Scuola Media Inferiore o Titoli Equipollenti",
+      "dtelezione": 20190203,
+      "cognome": "Paolini",
+      "sigla": "s105190",
+      "corsi": [
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 2571,
+      "nome": "Secondino",
+      "dtnascita": 19550718,
+      "titolo": "Licenza di Scuola Media Superiore o Titoli Equipollenti",
+      "dtelezione": 20160605,
+      "cognome": "Di",
+      "sigla": "s2571",
+      "corsi": [
+        "DES",
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 12188,
+      "nome": "Walter",
+      "dtnascita": 19540105,
+      "titolo": "Licenza di Scuola Media Superiore o Titoli Equipollenti",
+      "dtelezione": 20190526,
+      "cognome": "Civetta",
+      "sigla": "s12188",
+      "corsi": [
+        "DES"
+      ]
+    },
+    {
+      "rowid": 56215,
+      "nome": "Maria",
+      "dtnascita": 19521125,
+      "titolo": "Licenza Media Inferiore",
+      "dtelezione": 20190526,
+      "cognome": "Assunta",
+      "sigla": "s56215",
+      "corsi": [
+        "ITA",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 38333,
+      "nome": "Mattia",
+      "dtnascita": 19990302,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20190526,
+      "cognome": "Possenti",
+      "sigla": "s38333",
+      "corsi": [
+        "YOG",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 21624,
+      "nome": "Diana",
+      "dtnascita": 19850413,
+      "titolo": "Laurea",
+      "dtelezione": 20160605,
+      "cognome": "Fornoni",
+      "sigla": "s21624",
+      "corsi": [
+        "ITA",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 30582,
+      "nome": "Pietro",
+      "dtnascita": 19550305,
+      "titolo": null,
+      "dtelezione": 20190526,
+      "cognome": "Ciberti",
+      "sigla": "s30582",
+      "corsi": [
+        "YOG",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 103128,
+      "nome": "Walter",
+      "dtnascita": 19650605,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20150531,
+      "cognome": "Tomelj",
+      "sigla": "s103128",
+      "corsi": [
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 67042,
+      "nome": "Leonardo",
+      "dtnascita": 19610427,
+      "titolo": "Laurea",
+      "dtelezione": 20170611,
+      "cognome": "Burgio",
+      "sigla": "s67042",
+      "corsi": [
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 20469,
+      "nome": "Enrica",
+      "dtnascita": 19530227,
+      "titolo": "Licenza di Scuola Media Superiore o Titoli Equipollenti",
+      "dtelezione": 20190526,
+      "cognome": "Baio",
+      "sigla": "s20469",
+      "corsi": [
+        "ITA",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 35720,
+      "nome": "Luigi",
+      "dtnascita": 19530205,
+      "titolo": "Laurea",
+      "dtelezione": 20160605,
+      "cognome": "Fereoli",
+      "sigla": "s35720",
+      "corsi": [
+        "YOG",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 25021,
+      "nome": "Domenico",
+      "dtnascita": 19621125,
+      "titolo": null,
+      "dtelezione": 20180610,
+      "cognome": "Bonomo",
+      "sigla": "s25021",
+      "corsi": [
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 44305,
+      "nome": "Maria",
+      "dtnascita": 19930126,
+      "titolo": "Laurea",
+      "dtelezione": 20180610,
+      "cognome": "Eugenia",
+      "sigla": "s44305",
+      "corsi": [
+        "YOG",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 71333,
+      "nome": "Gian",
+      "dtnascita": 19550712,
+      "titolo": "Licenza Media Inferiore",
+      "dtelezione": 20190526,
+      "cognome": "Michele",
+      "sigla": "s71333",
+      "corsi": [
+        "ITA",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 51362,
+      "nome": "Gaetano",
+      "dtnascita": 19670903,
+      "titolo": "Licenza di Scuola Media Superiore o Titoli Equipollenti",
+      "dtelezione": 20150531,
+      "cognome": "Bontempo",
+      "sigla": "s51362",
+      "corsi": [
+        "ITA",
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 104302,
+      "nome": "Peter",
+      "dtnascita": 19631030,
+      "titolo": "Licenza di Scuola Media Inferiore o Titoli Equipollenti",
+      "dtelezione": 20150510,
+      "cognome": "Schopf",
+      "sigla": "s104302",
+      "corsi": [
+        "MAT",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 101254,
+      "nome": "Martina",
+      "dtnascita": 19940702,
+      "titolo": "Laurea Breve",
+      "dtelezione": 20190526,
+      "cognome": "Gasparetto",
+      "sigla": "s101254",
+      "corsi": [
+        "MAT",
+        "YOG",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 101437,
+      "nome": "Fabio",
+      "dtnascita": 19790827,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20160605,
+      "cognome": "Braglia",
+      "sigla": "s101437",
+      "corsi": [
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 101264,
+      "nome": "Federica",
+      "dtnascita": 19850522,
+      "titolo": "Licenza Media Inferiore",
+      "dtelezione": 20190526,
+      "cognome": "Morao",
+      "sigla": "s101264",
+      "corsi": [
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 47696,
+      "nome": "Nicola",
+      "dtnascita": 19520308,
+      "titolo": "Licenza Media Inferiore",
+      "dtelezione": 20190526,
+      "cognome": "Bruno",
+      "sigla": "s47696",
+      "corsi": [
+        "DES",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 103832,
+      "nome": "Barbara",
+      "dtnascita": 19930504,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20170611,
+      "cognome": "Artieri",
+      "sigla": "s103832",
+      "corsi": [
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 15872,
+      "nome": "Angela",
+      "dtnascita": 19880720,
+      "titolo": "Laurea",
+      "dtelezione": 20170611,
+      "cognome": "Maria",
+      "sigla": "s15872",
+      "corsi": [
+        "DES"
+      ]
+    },
+    {
+      "rowid": 49588,
+      "nome": "Richard",
+      "dtnascita": 19650904,
+      "titolo": "Licenza di Scuola Media Inferiore o Titoli Equipollenti",
+      "dtelezione": 20150510,
+      "cognome": "Erlacher",
+      "sigla": "s49588",
+      "corsi": [
+        "YOG",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 53447,
+      "nome": "Tiziano",
+      "dtnascita": 19670507,
+      "titolo": "Laurea",
+      "dtelezione": 20150531,
+      "cognome": "Alessandro",
+      "sigla": "s53447",
+      "corsi": [
+        "YOG",
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 80129,
+      "nome": "Giuliana",
+      "dtnascita": 19711221,
+      "titolo": null,
+      "dtelezione": 20180610,
+      "cognome": "Giannone",
+      "sigla": "s80129",
+      "corsi": [
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 99741,
+      "nome": "Palmerino",
+      "dtnascita": 19640713,
+      "titolo": "Laurea",
+      "dtelezione": 20180610,
+      "cognome": "Fagnilli",
+      "sigla": "s99741",
+      "corsi": [
+        "YOG",
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 59456,
+      "nome": "Daniela",
+      "dtnascita": 19601231,
+      "titolo": "Laurea",
+      "dtelezione": 20190526,
+      "cognome": "Tobaldini",
+      "sigla": "s59456",
+      "corsi": [
+        "MAT",
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 18649,
+      "nome": "Giuseppe",
+      "dtnascita": 19860804,
+      "titolo": "Licenza di Scuola Media Superiore o Titoli Equipollenti",
+      "dtelezione": 20190526,
+      "cognome": "Di",
+      "sigla": "s18649",
+      "corsi": [
+        "YOG",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 57841,
+      "nome": "Roberto",
+      "dtnascita": 19650314,
+      "titolo": "Licenza di Scuola Media Superiore o Titoli Equipollenti",
+      "dtelezione": 20190526,
+      "cognome": "Nerviani",
+      "sigla": "s57841",
+      "corsi": [
+        "MAT",
+        "ITA",
+        "DES"
+      ]
+    },
+    {
+      "rowid": 62532,
+      "nome": "Daniele",
+      "dtnascita": 19811218,
+      "titolo": "Licenza Media Inferiore",
+      "dtelezione": 20190526,
+      "cognome": "Corbella",
+      "sigla": "s62532",
+      "corsi": [
+        "DES"
+      ]
+    }
+  ],
+  "docenti": [
+    {
+      "rowid": 31103,
+      "nome": "Simone",
+      "dtnascita": 19851001,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20170611,
+      "cognome": "Mignano",
+      "sigla": "d31103",
+      "corsi": [
+        "MAT",
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 37169,
+      "nome": "Andrea",
+      "dtnascita": 19761129,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20190526,
+      "cognome": "Benini",
+      "sigla": "d37169",
+      "corsi": [
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 90745,
+      "nome": "Tommaso",
+      "dtnascita": 19680315,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20170611,
+      "cognome": "Trozzi",
+      "sigla": "d90745",
+      "corsi": [
+        "DES"
+      ]
+    },
+    {
+      "rowid": 16942,
+      "nome": "Angelo",
+      "dtnascita": 19650527,
+      "titolo": "Laurea",
+      "dtelezione": 20180429,
+      "cognome": "Salamon",
+      "sigla": "d16942",
+      "corsi": [
+        "MAT",
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 42350,
+      "nome": "Serena",
+      "dtnascita": 19870113,
+      "titolo": "Laurea",
+      "dtelezione": 20170611,
+      "cognome": "Baronchelli",
+      "sigla": "d42350",
+      "corsi": [
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 15430,
+      "nome": "Renato",
+      "dtnascita": 19610818,
+      "titolo": "Licenza Media Inferiore",
+      "dtelezione": 20190526,
+      "cognome": "Pedretti",
+      "sigla": "d15430",
+      "corsi": [
+        "DES",
+        "ITA"
+      ]
+    },
+    {
+      "rowid": 39611,
+      "nome": "Claudio",
+      "dtnascita": 19571027,
+      "titolo": "Licenza Media Inferiore",
+      "dtelezione": 20190526,
+      "cognome": "Manenti",
+      "sigla": "d39611",
+      "corsi": [
+        "MAT"
+      ]
+    },
+    {
+      "rowid": 105327,
+      "nome": "Barbara",
+      "dtnascita": 19700505,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20181031,
+      "cognome": "Di",
+      "sigla": "d105327",
+      "corsi": [
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 63542,
+      "nome": "Giovanni",
+      "dtnascita": 19960725,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20180610,
+      "cognome": "Ludwig",
+      "sigla": "d63542",
+      "corsi": [
+        "DES",
+        "YOG"
+      ]
+    },
+    {
+      "rowid": 88332,
+      "nome": "Mariangela",
+      "dtnascita": 19781205,
+      "titolo": "Licenza Media Superiore",
+      "dtelezione": 20180610,
+      "cognome": "Sciolti",
+      "sigla": "d88332",
+      "corsi": [
+        "ITA",
+        "MAT"
+      ]
+    }
+  ],
+  "corsi": [
+    {
+      "sigla": "ITA",
+      "nome": "italiano",
+      "docente": "d39611",
+      "studenti": [
+        "s101437",
+        "s53447",
+        "s72754",
+        "s761",
+        "s40979",
+        "s30582",
+        "s71399",
+        "s66769",
+        "s48495",
+        "s34536",
+        "s73870",
+        "s21624",
+        "s44262",
+        "s33598"
+      ]
+    },
+    {
+      "sigla": "MAT",
+      "nome": "matematica",
+      "docente": "d105327",
+      "assistente": "d31103",
+      "studenti": [
+        "s25021",
+        "s95804",
+        "s40474",
+        "s59456",
+        "s101437",
+        "s103183",
+        "s66558",
+        "s44305",
+        "s35720",
+        "s8412",
+        "s74508",
+        "s47696",
+        "s75004",
+        "s37198",
+        "s3844",
+        "s80599",
+        "s72754",
+        "s59245",
+        "s62532",
+        "s105190",
+        "s64259",
+        "s80129",
+        "s52577",
+        "s39024",
+        "s99943",
+        "s99665",
+        "s55308",
+        "s80339",
+        "s77108",
+        "s34536"
+      ]
+    },
+    {
+      "sigla": "YOG",
+      "nome": "yoga",
+      "docente": "d37169",
+      "assistente": "d15430",
+      "studenti": [
+        "s3844",
+        "s101320",
+        "s80599",
+        "s67042",
+        "s74508",
+        "s55308",
+        "s21624",
+        "s47497",
+        "s30627",
+        "s57841",
+        "s101264",
+        "s93843",
+        "s20469",
+        "s75004",
+        "s51207",
+        "s73696",
+        "s44262",
+        "s95966",
+        "s48495",
+        "s761",
+        "s33598",
+        "s44305",
+        "s79184",
+        "s2571",
+        "s12188",
+        "s6462",
+        "s31092",
+        "s72754"
+      ]
+    },
+    {
+      "sigla": "DES",
+      "nome": "jacopo",
+      "docente": "d42350",
+      "studenti": [
+        "s48495",
+        "s51362",
+        "s47280",
+        "s101437",
+        "s94591",
+        "s87860",
+        "s59245",
+        "s44305",
+        "s49588",
+        "s91770",
+        "s935",
+        "s57841",
+        "s53671",
+        "s33697",
+        "s67121",
+        "s102675",
+        "s40979",
+        "s71399",
+        "s101264"
+      ]
+    }
+  ]
+}
