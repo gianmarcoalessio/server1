@@ -102,6 +102,15 @@ content-type: application/json
     "livello":1
 }
 
+###
+
+POST http://localhost:8000/scuola/corsi1
+content-type: application/json
+
+{
+    "_UID": "Tuchick"
+}
+
 
 
 
