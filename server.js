@@ -1,3 +1,5 @@
+//PER FAR PARTIRE IL SERVER SCRIVERE YARN START perchè abbiamo scritto lo script su node, altrimenti scrivere su terminale nodemon server.js
+
 const express = require('express')
 const fs = require("fs")
 const moduleAlias = require("module-alias") //alias delle cartelle, molto utile
@@ -33,6 +35,7 @@ app.get('/test.html', function (req, res) {
 app.use("/servo1",require("@src/servo1.js"))
 app.use("/comuni",require("@src/comuni.js"))
 app.use("/utenti",require("@src/utenti.js"))
+app.use("/scuola",require("@src/scuola.js"))
 
 
 app.listen(client.port || 3000,()=>{
