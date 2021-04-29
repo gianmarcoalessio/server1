@@ -104,12 +104,25 @@ content-type: application/json
 
 ###
 
-POST http://localhost:8000/scuola/corsi1
+POST http://localhost:8000/scuola/professore
 content-type: application/json
 
 {
-    "_UID": "Tuchick"
+    "_UID": "Tuchick",
+    "sigla": "d59602"
 }
+
+
+###
+
+POST http://localhost:8000/scuola/professore
+content-type: application/json
+
+{
+    "_UID": "Tuchick",
+    "sigla": "d36808"
+}
+
 
 
 
